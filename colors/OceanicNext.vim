@@ -141,7 +141,6 @@ endfunction
   call s:hi('Statement',                          s:red,    '',       '',          '')
   call s:hi('StorageClass',                       s:yellow, '',       '',          '')
   call s:hi('String',                             s:green,  '',       '',          '')
-  call s:hi('Structure',                          s:purple, '',       '',          '')
   call s:hi('Tag',                                s:yellow, '',       '',          '')
   call s:hi('Todo',                               s:yellow, s:base01, '',          '')
   call s:hi('Type',                               s:yellow, '',       '',          '')
@@ -166,26 +165,24 @@ endfunction
 
 
   " TreeSitter stuff
-  call s:hi('TSInclude',                          s:cyan,   '',       '',          '')
-  call s:hi('TSPunctBracket',                     s:cyan,   '',       '',          '')
-  call s:hi('TSPunctDelimiter',                   s:base07, '',       '',          '')
-  call s:hi('TSParameter',                        s:base07, '',       '',          '')
-  call s:hi('TSType',                             s:cyan,   '',       '',          '')
-  call s:hi('TSFunction',                         s:blue,   '',       '',          '')
+  " import 关键词
+  call s:hi('@include',                          s:purple,   '',       '',          '')
+  call s:hi('@type',                             s:base04,   '',       '',          '')
+  call s:hi('@constant',                         s:base04, '',       '',          '')
+  call s:hi('@variable',                         s:base04, '',       '',          '')
+  call s:hi('@punctuation.bracket',                             s:base04,   '',       '',          '')
+  " 类的方法
+  call s:hi('@method',                           s:blue,   '',       '',          '')
+  call s:hi('@type.qualifier',                    s:purple,   '',       '',          '')
+  call s:hi('@constant.builtin',                  s:orange,    '',       '',          '')
+  call s:hi('@variable.builtin',                  s:red,    '',       '',          '')
 
-  call s:hi('TSTagDelimiter',                     s:cyan,   '',       '',          '')
-  call s:hi('TSProperty',                         s:base07, '',       '',          '')
-  call s:hi('TSMethod',                           s:blue,   '',       '',          '')
-  call s:hi('TSParameter',                        s:orange, '',       '',          '')
-  call s:hi('TSConstructor',                      s:yellow, '',       '',          '')
-  call s:hi('TSVariable',                         s:base07, '',       '',          '')
-  call s:hi('TSOperator',                         s:cyan, '',       '',          '')
-  call s:hi('TSTag',                              s:yellow, '',       '',          '')
-  call s:hi('TSKeyword',                          s:purple, '',       '',          '')
-  call s:hi('TSKeywordOperator',                  s:purple, '',       '',          '')
-  call s:hi('TSVariableBuiltin',                  s:red,    '',       '',          '')
-  call s:hi('TSLabel',                            s:cyan,   '',       '',          '')
-  call s:hi('TSTagAttribute',                     s:purple,   '',       '',          '')
+  call s:hi('@tag.attribute',                     s:purple,   '',       '',          '')
+  call s:hi('@tag',                              s:yellow, '',       '',          '')
+  call s:hi('@tag.delimiter',                     s:yellow,   '',       '',          '')
+  call s:hi('@constructor',                     s:yellow,   '',       '',          '')
+  call s:hi('@class',                     s:yellow,   '',       '',          '')
+  call s:hi('@punctuation.special',                     s:cyan,   '',       '',          '')
 
   call s:hi('SpellBad',                           '',       '',       'undercurl', '')
   call s:hi('SpellLocal',                         '',       '',       'undercurl', '')
@@ -366,4 +363,5 @@ else
      \]
 
 endif
+
 
