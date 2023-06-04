@@ -167,21 +167,22 @@ endfunction
   " TreeSitter stuff
   " import 关键词
   call s:hi('@include',                          s:purple,   '',       '',          '')
-  call s:hi('@type',                             s:base04,   '',       '',          '')
-  call s:hi('@constant',                         s:base04, '',       '',          '')
-  call s:hi('@variable',                         s:base04, '',       '',          '')
-  call s:hi('@punctuation.bracket',                             s:base04,   '',       '',          '')
+  call s:hi('@type',                             s:base05,   '',       '',          '')
+  call s:hi('@constant',                         s:base05, '',       '',          '')
+  call s:hi('@variable',                         s:base05, '',       '',          '')
+  call s:hi('@punctuation.bracket',              s:base05,   '',       '',          '')
   " 类的方法
   call s:hi('@method',                           s:blue,   '',       '',          '')
   call s:hi('@type.qualifier',                    s:purple,   '',       '',          '')
   call s:hi('@constant.builtin',                  s:orange,    '',       '',          '')
-  call s:hi('@variable.builtin',                  s:red,    '',       '',          '')
+  call s:hi('@variable.builtin',                  s:brown,    '',       '',          '')
+  call s:hi('@type.builtin',                  s:yellow,    '',       '',          '')
+  call s:hi('@parameter',                  s:orange,    '',       '',          '')
 
   call s:hi('@tag.attribute',                     s:purple,   '',       '',          '')
   call s:hi('@tag',                              s:yellow, '',       '',          '')
   call s:hi('@tag.delimiter',                     s:yellow,   '',       '',          '')
   call s:hi('@constructor',                     s:yellow,   '',       '',          '')
-  call s:hi('@class',                     s:yellow,   '',       '',          '')
   call s:hi('@punctuation.special',                     s:cyan,   '',       '',          '')
 
   call s:hi('SpellBad',                           '',       '',       'undercurl', '')
