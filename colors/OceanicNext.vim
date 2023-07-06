@@ -67,6 +67,7 @@ function! s:hi(group, fg, bg, attr, attrsp)
 endfunction
 " }}}
 " {{{ call s::hi(group, fg, bg, gui, guisp)
+  call s:hi('NotifyBackground',                   '',    s:base00, '',          '')
   call s:hi('Bold',                               '',       '',       s:bold,      '')
   call s:hi('Debug',                              s:red,    '',       '',          '')
   call s:hi('Directory',                          s:blue,   '',       '',          '')
