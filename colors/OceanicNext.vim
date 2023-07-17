@@ -135,7 +135,7 @@ endfunction
 
   call s:hi('Label',                              s:yellow, '',       '',          '')
   call s:hi('Number',                             s:orange, '',       '',          '')
-  call s:hi('Operator',                           s:base05, '',       '',          '')
+  call s:hi('Operator',                           s:cyan, '',       '',          '')
   call s:hi('PreProc',                            s:yellow, '',       '',          '')
   call s:hi('Repeat',                             s:yellow, '',       '',          '')
   call s:hi('Special',                            s:cyan,   '',       '',          '')
@@ -175,12 +175,16 @@ endfunction
   call s:hi('@punctuation.bracket',              s:base05,   '',       '',          '')
   " 类的方法
   call s:hi('@method',                           s:blue,   '',       '',          '')
+  call s:hi('@decorator',                           s:red,   '',       '',          '')
   call s:hi('@type.qualifier',                    s:purple,   '',       '',          '')
   call s:hi('@constant.builtin',                  s:orange,    '',       '',          '')
   call s:hi('@variable.builtin',                  s:brown,    '',       '',          '')
   call s:hi('@type.builtin',                  s:yellow,    '',       '',          '')
   call s:hi('@parameter',                  s:orange,    '',       '',          '')
 
+  call s:hi('@punctuation.delimiter',             s:base04,   '',       '',          '')
+  call s:hi('@property',                          s:base05,   '',       '',          '')
+  call s:hi('@operator',                          s:purple,   '',       '',          '')
   call s:hi('@tag.attribute',                     s:purple,   '',       '',          '')
   call s:hi('@tag',                              s:yellow, '',       '',          '')
   call s:hi('@tag.delimiter',                     s:yellow,   '',       '',          '')
